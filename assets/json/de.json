@@ -1,0 +1,194 @@
+{
+    "beers": [{
+            "name": "Zlatý Bažant 12°",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Šariš 12°",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,8–5%"
+        },
+        {
+            "name": "Šariš Tmavý",
+            "color": "Dunkel",
+            "type": "Dunkler Lager",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Corgoň 12°",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,7–5%"
+        },
+        {
+            "name": "Steiger 12°",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,9%"
+        },
+        {
+            "name": "Steiger Tmavé",
+            "color": "Dunkel",
+            "type": "Dunkler Lager",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Urpiner 12°",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,7–5%"
+        },
+        {
+            "name": "Urpiner Premium",
+            "color": "Bernstein",
+            "type": "Lager",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Smädný Mních",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Birell (nealko)",
+            "color": "Hell",
+            "type": "Alkoholfreies Bier",
+            "alcohol": "0,5%"
+        },
+        {
+            "name": "Smädný Mních Radler",
+            "color": "Hell",
+            "type": "Radler",
+            "alcohol": "2–2,5%"
+        },
+        {
+            "name": "Zlatý Bažant Radler",
+            "color": "Hell",
+            "type": "Radler",
+            "alcohol": "2–2,5%"
+        },
+        {
+            "name": "Pilsner Urquell",
+            "color": "Hell",
+            "type": "Pilsner / Lager",
+            "alcohol": "4,4–4,5%"
+        },
+        {
+            "name": "Gambrinus",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,0–4,5%"
+        },
+        {
+            "name": "Krušovice",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,1–4,5%"
+        },
+        {
+            "name": "Velkopopovický Kozel",
+            "color": "Dunkel",
+            "type": "Dunkler Lager / Porter",
+            "alcohol": "4,6%"
+        },
+        {
+            "name": "Staropramen",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,3–5%"
+        },
+        {
+            "name": "Radegast",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Svijany",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,5–5%"
+        },
+        {
+            "name": "Pilsák",
+            "color": "Bernstein",
+            "type": "Lager / Ale",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Tatras",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,7%"
+        },
+        {
+            "name": "Franz",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,6–5%"
+        },
+        {
+            "name": "Nilio",
+            "color": "Hell",
+            "type": "Alkoholfrei / Lager",
+            "alcohol": "0–2,5%"
+        },
+        {
+            "name": "Gemer",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Martiner",
+            "color": "Hell",
+            "type": "Lager",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Karpat APA",
+            "color": "Hell",
+            "type": "Ale / IPA",
+            "alcohol": "5,5%"
+        },
+        {
+            "name": "Corvus IPA",
+            "color": "Hell",
+            "type": "Ale / IPA",
+            "alcohol": "6%"
+        },
+        {
+            "name": "Clockwork Tangerine",
+            "color": "Hell",
+            "type": "Ale / American Pale Ale",
+            "alcohol": "5,5%"
+        },
+        {
+            "name": "Punk IPA – Wywar",
+            "color": "Hell",
+            "type": "Ale / IPA",
+            "alcohol": "6,2%"
+        }
+    ],
+    "header": {
+        "langMenu": {
+            "text": "Sprache auswählen",
+            "button": "Senden"
+        },
+        "finder": "Bier finden",
+        "contacts": "Kontakt"
+    },
+    "formBeer": {
+        "selectBeer": "Welches Bier möchtest du?"
+    },
+    "noBeer": {
+        "idk": "Hilf mir, ein Bier auszuwählen"
+    },
+    "what": {
+        "city": "Stadt eingeben: "
+    }
+}

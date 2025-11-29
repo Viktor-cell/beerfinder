@@ -1,0 +1,194 @@
+{
+    "beers": [{
+            "name": "Zlatý Bažant 12°",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Šariš 12°",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,8–5%"
+        },
+        {
+            "name": "Šariš Tmavý",
+            "color": "Ciemne",
+            "type": "Ciemny leżak",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Corgoň 12°",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,7–5%"
+        },
+        {
+            "name": "Steiger 12°",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,9%"
+        },
+        {
+            "name": "Steiger Tmavé",
+            "color": "Ciemne",
+            "type": "Ciemny leżak",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Urpiner 12°",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,7–5%"
+        },
+        {
+            "name": "Urpiner Premium",
+            "color": "Bursztynowe",
+            "type": "Leżak",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Smädný Mních",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Birell (nealko)",
+            "color": "Jasne",
+            "type": "Piwo bezalkoholowe",
+            "alcohol": "0,5%"
+        },
+        {
+            "name": "Smädný Mních Radler",
+            "color": "Jasne",
+            "type": "Radler",
+            "alcohol": "2–2,5%"
+        },
+        {
+            "name": "Zlatý Bažant Radler",
+            "color": "Jasne",
+            "type": "Radler",
+            "alcohol": "2–2,5%"
+        },
+        {
+            "name": "Pilsner Urquell",
+            "color": "Jasne",
+            "type": "Pilsner / Leżak",
+            "alcohol": "4,4–4,5%"
+        },
+        {
+            "name": "Gambrinus",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,0–4,5%"
+        },
+        {
+            "name": "Krušovice",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,1–4,5%"
+        },
+        {
+            "name": "Velkopopovický Kozel",
+            "color": "Ciemne",
+            "type": "Ciemny leżak / Porter",
+            "alcohol": "4,6%"
+        },
+        {
+            "name": "Staropramen",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,3–5%"
+        },
+        {
+            "name": "Radegast",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Svijany",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,5–5%"
+        },
+        {
+            "name": "Pilsák",
+            "color": "Bursztynowe",
+            "type": "Leżak / Ale",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Tatras",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,7%"
+        },
+        {
+            "name": "Franz",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,6–5%"
+        },
+        {
+            "name": "Nilio",
+            "color": "Jasne",
+            "type": "Bezalkoholowe / Leżak",
+            "alcohol": "0–2,5%"
+        },
+        {
+            "name": "Gemer",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Martiner",
+            "color": "Jasne",
+            "type": "Leżak",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Karpat APA",
+            "color": "Jasne",
+            "type": "Ale / IPA",
+            "alcohol": "5,5%"
+        },
+        {
+            "name": "Corvus IPA",
+            "color": "Jasne",
+            "type": "Ale / IPA",
+            "alcohol": "6%"
+        },
+        {
+            "name": "Clockwork Tangerine",
+            "color": "Jasne",
+            "type": "Ale / American Pale Ale",
+            "alcohol": "5,5%"
+        },
+        {
+            "name": "Punk IPA – Wywar",
+            "color": "Jasne",
+            "type": "Ale / IPA",
+            "alcohol": "6,2%"
+        }
+    ],
+    "header": {
+        "langMenu": {
+            "text": "Wybierz język",
+            "button": "Wyślij"
+        },
+        "finder": "Znajdź piwo",
+        "contacts": "Kontaky"
+    },
+    "formBeer": {
+        "selectBeer": "Jakie piwo chcesz?"
+    },
+    "noBeer": {
+        "idk": "Pomóż mi wybrać piwo"
+    },
+    "what": {
+        "city": "Wprowadź miasto: "
+    }
+}

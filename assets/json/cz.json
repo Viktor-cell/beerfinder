@@ -1,0 +1,194 @@
+{
+    "beers": [{
+            "name": "Zlatý Bažant 12°",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Šariš 12°",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,8–5%"
+        },
+        {
+            "name": "Šariš Tmavý",
+            "color": "Tmavá",
+            "type": "Tmavý ležák",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Corgoň 12°",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,7–5%"
+        },
+        {
+            "name": "Steiger 12°",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,9%"
+        },
+        {
+            "name": "Steiger Tmavé",
+            "color": "Tmavá",
+            "type": "Tmavý ležák",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Urpiner 12°",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,7–5%"
+        },
+        {
+            "name": "Urpiner Premium",
+            "color": "Polotmavá",
+            "type": "Ležák",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Smädný Mních",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Birell (nealko)",
+            "color": "Světlá",
+            "type": "Nealko pivo",
+            "alcohol": "0,5%"
+        },
+        {
+            "name": "Smädný Mních Radler",
+            "color": "Světlá",
+            "type": "Radler",
+            "alcohol": "2–2,5%"
+        },
+        {
+            "name": "Zlatý Bažant Radler",
+            "color": "Světlá",
+            "type": "Radler",
+            "alcohol": "2–2,5%"
+        },
+        {
+            "name": "Pilsner Urquell",
+            "color": "Světlá",
+            "type": "Pilsner / Ležák",
+            "alcohol": "4,4–4,5%"
+        },
+        {
+            "name": "Gambrinus",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,0–4,5%"
+        },
+        {
+            "name": "Krušovice",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,1–4,5%"
+        },
+        {
+            "name": "Velkopopovický Kozel",
+            "color": "Tmavá",
+            "type": "Tmavý ležák / Porter",
+            "alcohol": "4,6%"
+        },
+        {
+            "name": "Staropramen",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,3–5%"
+        },
+        {
+            "name": "Radegast",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Svijany",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,5–5%"
+        },
+        {
+            "name": "Pilsák",
+            "color": "Jantarová",
+            "type": "Ležák / Ale",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Tatras",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,7%"
+        },
+        {
+            "name": "Franz",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,6–5%"
+        },
+        {
+            "name": "Nilio",
+            "color": "Světlá",
+            "type": "Nealko / Ležák",
+            "alcohol": "0–2,5%"
+        },
+        {
+            "name": "Gemer",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "4,8%"
+        },
+        {
+            "name": "Martiner",
+            "color": "Světlá",
+            "type": "Ležák (lager)",
+            "alcohol": "5%"
+        },
+        {
+            "name": "Karpat APA",
+            "color": "Světlá",
+            "type": "Ale / IPA",
+            "alcohol": "5,5%"
+        },
+        {
+            "name": "Corvus IPA",
+            "color": "Světlá",
+            "type": "Ale / IPA",
+            "alcohol": "6%"
+        },
+        {
+            "name": "Clockwork Tangerine",
+            "color": "Světlá",
+            "type": "Ale / American Pale Ale",
+            "alcohol": "6,5%"
+        },
+        {
+            "name": "Punk IPA – Wywar",
+            "color": "Světlá",
+            "type": "Ale / IPA",
+            "alcohol": "6,2%"
+        }
+    ],
+    "header": {
+        "langMenu": {
+            "text": "Vyberte jazyk",
+            "button": "Odeslat"
+        },
+        "finder": "Najít pivo",
+        "contacts": "Kontakt"
+    },
+    "formBeer": {
+        "selectBeer": "Jaké pivo chceš?"
+    },
+    "noBeer": {
+        "idk": "Pomoz mi vybrat si pivo"
+    },
+    "what": {
+        "city": "Zadejte město: "
+    }
+}

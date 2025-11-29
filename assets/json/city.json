@@ -1,0 +1,425 @@
+[
+    {
+        "name": "Bratislava"
+    },
+    {
+        "name": "Košice"
+    },
+    {
+        "name": "Prešov"
+    },
+    {
+        "name": "Žilina"
+    },
+    {
+        "name": "Nitra"
+    },
+    {
+        "name": "Banská Bystrica"
+    },
+    {
+        "name": "Trnava"
+    },
+    {
+        "name": "Trenčín"
+    },
+    {
+        "name": "Martin"
+    },
+    {
+        "name": "Poprad"
+    },
+    {
+        "name": "Prievidza"
+    },
+    {
+        "name": "Zvolen"
+    },
+    {
+        "name": "Považská Bystrica"
+    },
+    {
+        "name": "Nové Zámky"
+    },
+    {
+        "name": "Michalovce"
+    },
+    {
+        "name": "Spišská Nová Ves"
+    },
+    {
+        "name": "Komárno"
+    },
+    {
+        "name": "Levice"
+    },
+    {
+        "name": "Liptovský Mikuláš"
+    },
+    {
+        "name": "Bardejov"
+    },
+    {
+        "name": "Humenné"
+    },
+    {
+        "name": "Ružomberok"
+    },
+    {
+        "name": "Piešťany"
+    },
+    {
+        "name": "Lučenec"
+    },
+    {
+        "name": "Pezinok"
+    },
+    {
+        "name": "Topoľčany"
+    },
+    {
+        "name": "Dunajská Streda"
+    },
+    {
+        "name": "Trebišov"
+    },
+    {
+        "name": "Čadca"
+    },
+    {
+        "name": "Dubnica nad Váhom"
+    },
+    {
+        "name": "Rimavská Sobota"
+    },
+    {
+        "name": "Partizánske"
+    },
+    {
+        "name": "Vranov nad Topľou"
+    },
+    {
+        "name": "Senec"
+    },
+    {
+        "name": "Šaľa"
+    },
+    {
+        "name": "Brezno"
+    },
+    {
+        "name": "Hlohovec"
+    },
+    {
+        "name": "Nové Mesto nad Váhom"
+    },
+    {
+        "name": "Senica"
+    },
+    {
+        "name": "Malacky"
+    },
+    {
+        "name": "Snina"
+    },
+    {
+        "name": "Dolný Kubín"
+    },
+    {
+        "name": "Rožňava"
+    },
+    {
+        "name": "Púchov"
+    },
+    {
+        "name": "Žiar nad Hronom"
+    },
+    {
+        "name": "Bánovce nad Bebravou"
+    },
+    {
+        "name": "Stará Ľubovňa"
+    },
+    {
+        "name": "Handlová"
+    },
+    {
+        "name": "Skalica"
+    },
+    {
+        "name": "Galanta"
+    },
+    {
+        "name": "Kežmarok"
+    },
+    {
+        "name": "Sereď"
+    },
+    {
+        "name": "Kysucké Nové Mesto"
+    },
+    {
+        "name": "Levoča"
+    },
+    {
+        "name": "Šamorín"
+    },
+    {
+        "name": "Detva"
+    },
+    {
+        "name": "Stupava"
+    },
+    {
+        "name": "Sabinov"
+    },
+    {
+        "name": "Zlaté Moravce"
+    },
+    {
+        "name": "Bytča"
+    },
+    {
+        "name": "Revúca"
+    },
+    {
+        "name": "Holíč"
+    },
+    {
+        "name": "Myjava"
+    },
+    {
+        "name": "Kolárovo"
+    },
+    {
+        "name": "Moldava nad Bodvou"
+    },
+    {
+        "name": "Veľký Krtíš"
+    },
+    {
+        "name": "Nová Dubnica"
+    },
+    {
+        "name": "Stropkov"
+    },
+    {
+        "name": "Svidník"
+    },
+    {
+        "name": "Fiľakovo"
+    },
+    {
+        "name": "Štúrovo"
+    },
+    {
+        "name": "Banská Štiavnica"
+    },
+    {
+        "name": "Modra"
+    },
+    {
+        "name": "Šurany"
+    },
+    {
+        "name": "Tvrdošín"
+    },
+    {
+        "name": "Krompachy"
+    },
+    {
+        "name": "Sečovce"
+    },
+    {
+        "name": "Veľké Kapušany"
+    },
+    {
+        "name": "Vráble"
+    },
+    {
+        "name": "Stará Turá"
+    },
+    {
+        "name": "Veľký Meder"
+    },
+    {
+        "name": "Svit"
+    },
+    {
+        "name": "Krupina"
+    },
+    {
+        "name": "Vrútky"
+    },
+    {
+        "name": "Námestovo"
+    },
+    {
+        "name": "Kráľovský Chlmec"
+    },
+    {
+        "name": "Hurbanovo"
+    },
+    {
+        "name": "Veľký Šariš"
+    },
+    {
+        "name": "Trstená"
+    },
+    {
+        "name": "Liptovský Hrádok"
+    },
+    {
+        "name": "Hriňová"
+    },
+    {
+        "name": "Šahy"
+    },
+    {
+        "name": "Turzovka"
+    },
+    {
+        "name": "Nová Baňa"
+    },
+    {
+        "name": "Tornaľa"
+    },
+    {
+        "name": "Spišská Belá"
+    },
+    {
+        "name": "Želiezovce"
+    },
+    {
+        "name": "Krásno nad Kysucou"
+    },
+    {
+        "name": "Lipany"
+    },
+    {
+        "name": "Hnúšťa"
+    },
+    {
+        "name": "Nemšová"
+    },
+    {
+        "name": "Turčianske Teplice"
+    },
+    {
+        "name": "Svätý Jur"
+    },
+    {
+        "name": "Sobrance"
+    },
+    {
+        "name": "Gelnica"
+    },
+    {
+        "name": "Medzilaborce"
+    },
+    {
+        "name": "Rajec"
+    },
+    {
+        "name": "Žarnovica"
+    },
+    {
+        "name": "Vrbové"
+    },
+    {
+        "name": "Ilava"
+    },
+    {
+        "name": "Sládkovičovo"
+    },
+    {
+        "name": "Gabčíkovo"
+    },
+    {
+        "name": "Dobšiná"
+    },
+    {
+        "name": "Poltár"
+    },
+    {
+        "name": "Bojnice"
+    },
+    {
+        "name": "Nesvady"
+    },
+    {
+        "name": "Šaštín-Stráže"
+    },
+    {
+        "name": "Gbely"
+    },
+    {
+        "name": "Sliač"
+    },
+    {
+        "name": "Kremnica"
+    },
+    {
+        "name": "Brezová pod Bradlom"
+    },
+    {
+        "name": "Strážske"
+    },
+    {
+        "name": "Medzev"
+    },
+    {
+        "name": "Nováky"
+    },
+    {
+        "name": "Turany"
+    },
+    {
+        "name": "Giraltovce"
+    },
+    {
+        "name": "Trenčianske Teplice"
+    },
+    {
+        "name": "Leopoldov"
+    },
+    {
+        "name": "Vysoké Tatry"
+    },
+    {
+        "name": "Spišské Podhradie"
+    },
+    {
+        "name": "Hanušovce nad Topľou"
+    },
+    {
+        "name": "Tisovec"
+    },
+    {
+        "name": "Tlmače"
+    },
+    {
+        "name": "Čierna nad Tisou"
+    },
+    {
+        "name": "Spišské Vlachy"
+    },
+    {
+        "name": "Jelšava"
+    },
+    {
+        "name": "Podolínec"
+    },
+    {
+        "name": "Rajecké Teplice"
+    },
+    {
+        "name": "Spišská Stará Ves"
+    },
+    {
+        "name": "Modrý Kameň"
+    },
+    {
+        "name": "Dudince"
+    }
+]
