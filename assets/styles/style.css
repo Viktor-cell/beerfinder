@@ -260,9 +260,12 @@
     
     .social-icons a {
         display: inline-block;
-        width: 10px;
-        height: 10px;
         margin-right: 10px;
+    }
+    
+    .social-icons img {
+        height: 10px;
+        width: auto;
     }
     
     .footer-bottom {
