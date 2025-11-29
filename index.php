@@ -73,32 +73,38 @@
         </div> -->
 
         <?php if(!$_POST['city']): ?>
-        <div id="select-beer">
-        <form action="/index.php/?lang=<?= $lang ?>" method="POST">
-            
-            <label for="select-beer"><?= $t["formBeer"]["selectBeer"]?> </label>
-            <br>
-            <input type="text" 
-            id="select-beer" 
-            name="select-beer" 
-            value="<?= $_POST['select-beer']?>"><br> 
-            <?php if(isset($_POST['select-beer'])): ?> 
-                <label for="select-beer"><?= $t["what"]["city"]?></label> 
-                <input type="text" id="city" name="city" value="<?= $_POST['city']?>"><br> 
-            <?php endif?> 
-            <input id="sent" type="submit" value="<?= $t["header"]["langMenu"]["button"]?>"> 
-        </form> 
-        <button @click="toggleSearchBar"> <p><?= $t["noBeer"]["idk"]?></p> </button>
-        </div>
+            <div id="select-beer">
+                <form action="/index.php/?lang=<?= $lang ?>" method="POST">
+                    
+                    <label for="select-beer"><?= $t["formBeer"]["selectBeer"]?> </label>
+                    <br>
+                    <input type="text" 
+                    id="select-beer2" 
+                    name="select-beer2" 
+                    value="<?= $_POST['select-beer2']?>"><br> 
+                    <?php if(isset($_POST['select-beer2'])): ?> 
+                        <label for="select-beer2"><?= $t["what"]["city"]?></label> 
+                        <input type="text" id="city" name="city" value="<?= $_POST['city']?>"><br> 
+                    <?php endif?> 
+                    <input id="sent" type="submit" value="<?= $t["header"]["langMenu"]["button"]?>"> 
+                </form>
+            <?php if(!isset($_POST['select-beer2'])): ?>
+                <button @click="toggleSearchBar"> <p><?= $t["noBeer"]["idk"]?></p> </button>
+            <?php endif ?>
+            </div>
         <?php endif?>
 
-        <div id="searchbarr">
-            <searching v-if="showSearch" :translations="translations"></searching>
-        </div>
-        <div class="cards-container">
-            <beers v-for="beer in info" :beer="beer" :key="beer.id" @select-beer="fillBeerInput"></beers>
-        </div>
-
+        <?php if(!isset($_POST['select-beer2'])): ?>
+            <div id="show">
+                <div id="searchbarr">
+                    <searching v-if="showSearch" :translations="translations"></searching>
+                </div>
+                <div class="cards-container">
+                    <beers v-for="beer in info" :beer="beer" :key="beer.id" @select-beer="fillBeerInput"></beers>
+                </div>
+            </div>
+            <script>document.getElementById("show").style.display = "none";</script>
+        <?php endif ?>
 
     </main>
     <footer id="footer">
@@ -119,7 +125,7 @@
     <div class="footer-social">
       <h4>Sleduj nás</h4>
       <div class="social-icons">
-        <a href="#"><img src="/img/facebook-icon.png" alt="Facebook"></a>
+        <a href="https://www.facebook.com/slovenska.sporitelna.3?locale=sk_SK"><img src="/assets/img/facebook-icon.png" alt="Facebook"></a>
         <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
         <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
       </div>

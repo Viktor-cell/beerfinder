@@ -128,30 +128,55 @@
     }
     
     #select-beer {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+        margin-top: 20px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-self: center;
+        font-size: 30px;
+        position: relative;
+    }
+    
+    form {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
+    }
+    
+    #select-beer2 {
+        display: flex;
+        flex-direction: column;
+        flex-shrink: 1;
         padding-top: 10px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         padding-bottom: 10px;
         padding-right: 20px;
-        padding-left: 20px;
+        padding-left: 30px;
         justify-self: center;
-        width: 600px;
-        height: 30px;
-        font-size: 10px;
+        min-width: 600px;
+        font-size: 20px;
         border-radius: 30px;
     }
     
     #select-beer button {
         position: relative;
         justify-self: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         border-radius: 30px;
-        /*left: 70%;*/
+        left: 75%;
         bottom: 100%;
+        width: fit-content;
     }
     
     #sent {
         border-radius: 30px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         font-size: large;
         position: relative;
-        left: 93%;
+        margin: 5px;
+        left: 85%;
+        width: fit-content;
     }
     
     #searchbar {
@@ -235,6 +260,8 @@
     
     .social-icons a {
         display: inline-block;
+        width: 10px;
+        height: 10px;
         margin-right: 10px;
     }
     

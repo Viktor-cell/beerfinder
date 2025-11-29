@@ -17,6 +17,11 @@ createApp({
 
         function toggleSearchBar() {
             showSearch.value = !showSearch.value;
+            if(!showSearch.value){
+                document.getElementById("show").style.display = "none";
+            }else{
+                document.getElementById("show").style.display = "block";
+            }
         }
 
         fetch(`/assets/json/${sessionStorage.getItem("lang")}.json`)
@@ -29,7 +34,7 @@ createApp({
         console.log(info);
 
         function fillBeerInput(beerName) {
-            const input = document.getElementById("select-beer");
+            const input = document.getElementById("select-beer2");
             if(input) input.value = beerName;
         }
 

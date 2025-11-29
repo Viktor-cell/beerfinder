@@ -1,8 +1,8 @@
 <?php
 
 require_once "./utils.php";
+require "./config.php";
 
-$OPENAI_KEY = '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';
 
 function ask_ai($text)
 {
@@ -44,15 +44,16 @@ function recomend_pub($beer_json, $lang = "slovak", $pubs_json_src = "./beers.js
 You are given a JSON array of pubs with their beer lists. Each pub object has this structure:
 
 {
-    "name_of_pub": "",
-    "address": "",
+    "name_of_pub": "string (or empty if unknown)",
+    "address": "string (or empty if unknown)",
+    "city": "city from the address"
     "beers": [
         {
-            "name": "",
-            "color": "",
-            "type": "",
-            "alcohol_amount": "",
-            "price_per_500ml": ""
+        "name": "string (or empty if unknown)",
+        "color": "light or dark,
+        "alcohol_amount": "string (usually in name but multiply it by 0.5) if not given try to find out, just put the number or empty string, if in name it has nealko put 0",
+        "type": "Ale, Lager, Dark lager, Non-alcoholic, Alcoholic or empty if you are not 100% sure",
+        "price_per_500ml": "string (convert if possible, otherwise empty)"
         }
     ]
 }
@@ -60,13 +61,8 @@ You are given a JSON array of pubs with their beer lists. Each pub object has th
 A user will provide a single beer JSON object in this structure, if some field is empty interpret it as any value could be in it, if it is not in english you can translate it to english:
 
 {
-    "beer": {
-        "name": "beer name",
-        "color": "beer color",
-        "type": "beer type",
-        "alcohol_amount": "alcohol amount",
-        "price_per_500ml": "price"
-    }
+    "name": "beer name",
+    "city": "city of pub in which it is"
 }
 
 Your task is to select pubs that serve a beer matching the provided beer JSON. Matching should be done primarily by beer name, but type and color may also be considered for similarity. Return a JSON array of objects with this structure:
@@ -74,6 +70,8 @@ Your task is to select pubs that serve a beer matching the provided beer JSON. M
 {
     "name_of_pub": "",
     "address": ""
+    "city": "",
+    "price_per_500ml": "price of said beer"
 }
 
 Rules:
@@ -94,32 +92,30 @@ EOT;
 
 function recommend_beer($user_preference, $lang = "english", $pubs_json_src = "./beers.json") {
     $pubs_json = file_get_contents($pubs_json_src);
-
     $prompt = <<<EOT
 You are given a JSON array of pubs with their beer lists. Each pub object has this structure:
 
 {
-    "name_of_pub": "",
-    "address": "",
+    "name_of_pub": "string (or empty if unknown)",
+    "address": "string (or empty if unknown)",
+    "city": "city from the address"
     "beers": [
         {
-        "name": "",
-        "color": "",
-        "type": "",
-        "alcohol_amount": "",
-        "price_per_500ml": ""
+        "name": "string (or empty if unknown)",
+        "color": "light or dark,
+        "alcohol_amount": "string (usually in name but multiply it by 0.5) if not given try to find out, just put the number or empty string, if in name it has nealko put 0",
+        "type": "Ale, Lager, Dark lager, Non-alcoholic, Alcoholic or empty if you are not 100% sure",
+        "price_per_500ml": "string (convert if possible, otherwise empty)"
         }
     ]
 }
+
 
 A user will provide a beer preference (e.g., "I want a strong lager" or "I want a cheap beer"). Your task is to select beers that match the user's preference and return a JSON array of objects with this structure:
 
 {
     "name": "beer name",
-    "color": "beer color",
-    "type": "beer type",
-    "alcohol_amount": "alcohol amount",
-    "price_per_500ml": "price"
+    "city": "city of pub in which it is"
 }
 
 Rules:
@@ -138,13 +134,13 @@ EOT;
 
 function html_to_beer_json($url) {
     $html = html_from_url($url);
-
     $prompt = <<<EOT
 You are given HTML content from a pub's drink list. Extract and return only a single JSON object with this structure:
 
 {
     "name_of_pub": "string (or empty if unknown)",
     "address": "string (or empty if unknown)",
+    "city": "city from the address"
     "beers": [
         {
         "name": "string (or empty if unknown)",
@@ -220,15 +216,5 @@ function create_json_of_pub_bears($urls) {
     file_put_contents("beers.json", $result_json);
 }
 
-//create_json_of_pub_bears($URLS);
-
-//echo recommend_beer("chcem tmave pivo", "german");
-/*
-echo recomend_pub('      {
-    "name": "Šariš tmavý",
-    "color": "tmavé",
-    "type": "tmavý ležiak",
-    "alcohol_amount": "",
-    "price_per_500ml": ""
-    }');
-    */
+create_json_of_pub_bears($URLS);
+echo recommend_beer("chcem tmave pivo", "slovak");
