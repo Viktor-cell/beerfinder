@@ -46,7 +46,7 @@
         <img src="/assets/img/logo.png" alt="logo">
         <div id="nav">
             <a href="#search"><?= $t["header"]["finder"]?></a>
-            <a href="footer"><?= $t['header']['contacts']?></a>
+            <a href="#footer"><?= $t['header']['contacts']?></a>
             <div id="langMenuBtn" onclick="openLangMenu()"><?= strtoupper($lang)?></div>
             
         </div>
@@ -86,21 +86,22 @@
                 <label for="select-beer"><?= $t["what"]["city"]?></label> 
                 <input type="text" id="city" name="city" value="<?= $_POST['city']?>"><br> 
             <?php endif?> 
-            <input type="submit" value="<?= $t["header"]["langMenu"]["button"]?>"> 
+            <input id="sent" type="submit" value="<?= $t["header"]["langMenu"]["button"]?>"> 
         </form> 
-        <button> <p><?= $t["noBeer"]["idk"]?></p> </button>
+        <button @click="toggleSearchBar"> <p><?= $t["noBeer"]["idk"]?></p> </button>
         </div>
         <?php endif?>
 
-       <searching :translations="translations"></searching> 
-
+        <div id="searchbarr">
+            <searching v-if="showSearch" :translations="translations"></searching>
+        </div>
         <div class="cards-container">
-            <beers v-for="beer in info" :beer="beer" :key="beer.id"></beers>
+            <beers v-for="beer in info" :beer="beer" :key="beer.id" @select-beer="fillBeerInput"></beers>
         </div>
 
 
     </main>
-    <footer>
+    <footer id="footer">
    <div class="footer-container">
     <div class="footer-about">
       <h3>BeerFinder</h3>

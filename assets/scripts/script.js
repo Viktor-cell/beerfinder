@@ -13,6 +13,11 @@ createApp({
     setup() {
         let translations = ref({})
         let info = ref([])
+        const showSearch = ref(false);
+
+        function toggleSearchBar() {
+            showSearch.value = !showSearch.value;
+        }
 
         fetch(`/assets/json/${sessionStorage.getItem("lang")}.json`)
             .then(request => request.json())
@@ -23,9 +28,17 @@ createApp({
 
         console.log(info);
 
+        function fillBeerInput(beerName) {
+            const input = document.getElementById("select-beer");
+            if(input) input.value = beerName;
+        }
+
         return {
+            showSearch,
+            toggleSearchBar,
             info,
-            translations
+            translations,
+            fillBeerInput
         }
     }
 }).mount("#app")

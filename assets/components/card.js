@@ -2,7 +2,7 @@
 let card = {
     
     template:`
-    <div class="card">
+    <div @click="selectBeer" class="card">
         <div class="card-description">
             <h2 class="name-beer">{{beer.name}}</h2>
             <p class="color-beer">{{beer.color}}</p>
@@ -11,7 +11,12 @@ let card = {
         </div>  
     </div>
     `,
-    props:["beer"]
+    props:["beer"],
+    methods: {
+        selectBeer() {
+            this.$emit('select-beer', this.beer.name);
+        }
+    }
 }
 
 

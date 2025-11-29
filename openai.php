@@ -4,6 +4,7 @@ require_once "./utils.php";
 
 $OPENAI_KEY = 'replace_me';
 
+
 function ask_ai($text)
 {
     global $OPENAI_KEY;
@@ -38,8 +39,63 @@ function ask_ai($text)
     return $response;
 }
 
+function recomend_pub($beer_json, $lang = "slovak", $pubs_json_src = "./beers.json") {
+    $pubs_json = file_get_contents($pubs_json_src);
+    $prompt = <<<EOT
+You are given a JSON array of pubs with their beer lists. Each pub object has this structure:
+
+{
+    "name_of_pub": "",
+    "address": "",
+    "beers": [
+        {
+            "name": "",
+            "color": "",
+            "type": "",
+            "alcohol_amount": "",
+            "price_per_500ml": ""
+        }
+    ]
+}
+
+A user will provide a single beer JSON object in this structure, if some field is empty interpret it as any value could be in it, if it is not in english you can translate it to english:
+
+{
+    "beer": {
+        "name": "beer name",
+        "color": "beer color",
+        "type": "beer type",
+        "alcohol_amount": "alcohol amount",
+        "price_per_500ml": "price"
+    }
+}
+
+Your task is to select pubs that serve a beer matching the provided beer JSON. Matching should be done primarily by beer name, but type and color may also be considered for similarity. Return a JSON array of objects with this structure:
+
+{
+    "name_of_pub": "",
+    "address": ""
+}
+
+Rules:
+
+1. Return an array of matching pubs, maximum 5 objects.
+2. If no pub matches, return an empty array: [].
+3. Do not include any extra text, comments, or formatting.
+4. Output must be valid JSON only.
+5. Translate the values in each field to $lang language.
+
+Input beer JSON: $beer_json
+Input pubs JSON: $pubs_json
+EOT;
+
+    return ask_ai($prompt);
+}
+
+
 function recommend_beer($user_preference, $lang = "english", $pubs_json_src = "./beers.json") {
     $pubs_json = file_get_contents($pubs_json_src);
+
     $prompt = <<<EOT
 You are given a JSON array of pubs with their beer lists. Each pub object has this structure:
 
@@ -60,15 +116,11 @@ You are given a JSON array of pubs with their beer lists. Each pub object has th
 A user will provide a beer preference (e.g., "I want a strong lager" or "I want a cheap beer"). Your task is to select beers that match the user's preference and return a JSON array of objects with this structure:
 
 {
-    "name_of_pub": "name of the pub where the beer is available",
-    "address": "pub address",
-    "beer": {
-        "name": "beer name",
-        "color": "beer color",
-        "type": "beer type",
-        "alcohol_amount": "alcohol amount",
-        "price_per_500ml": "price"
-    }
+    "name": "beer name",
+    "color": "beer color",
+    "type": "beer type",
+    "alcohol_amount": "alcohol amount",
+    "price_per_500ml": "price"
 }
 
 Rules:
@@ -171,4 +223,13 @@ function create_json_of_pub_bears($urls) {
 
 //create_json_of_pub_bears($URLS);
 
-echo recommend_beer("chcem lacne tmave pivo v kosiciach", "slovak");
+//echo recommend_beer("chcem tmave pivo", "german");
+/*
+echo recomend_pub('      {
+    "name": "Šariš tmavý",
+    "color": "tmavé",
+    "type": "tmavý ležiak",
+    "alcohol_amount": "",
+    "price_per_500ml": ""
+    }');
+    */

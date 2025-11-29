@@ -139,8 +139,18 @@
     }
     
     #select-beer button {
+        position: relative;
         justify-self: center;
         border-radius: 30px;
+        /*left: 70%;*/
+        bottom: 100%;
+    }
+    
+    #sent {
+        border-radius: 30px;
+        font-size: large;
+        position: relative;
+        left: 93%;
     }
     
     #searchbar {
