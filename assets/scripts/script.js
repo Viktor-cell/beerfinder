@@ -17,9 +17,9 @@ createApp({
 
         function toggleSearchBar() {
             showSearch.value = !showSearch.value;
-            if(!showSearch.value){
+            if (!showSearch.value) {
                 document.getElementById("show").style.display = "none";
-            }else{
+            } else {
                 document.getElementById("show").style.display = "block";
             }
         }
@@ -35,10 +35,11 @@ createApp({
 
         function fillBeerInput(beerName) {
             const input = document.getElementById("select-beer2");
-            if(input) input.value = beerName;
+            if (input) input.value = beerName;
         }
 
-    const beers = ref(window.beers);
+        const beers = ref(window.beers);
+
 
         return {
             showSearch,

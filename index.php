@@ -26,7 +26,7 @@
         }
     }
 
-    $json = file_get_contents( __DIR__ . "/assets/json/".$lang.".json");
+    $json = file_get_contents( __DIR__ . "/assets/json/".$lang.".json"); 
     $t = json_decode($json, true);
 ?>
 
@@ -35,7 +35,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/beers.css">
+    <link rel="stylesheet" href="/assets/styles/beers.css">    
     <link rel="stylesheet" href="/assets/styles/style.css">
     <link rel="stylesheet" href="/assets/styles/responsive.css">
     <title>Beer Finder</title>
@@ -45,7 +45,6 @@
     </script>
 
     <script>
-        window.beers = <?= json_encode(recommend_beer("daco cierne"), JSON_UNESCAPED_UNICODE) ?>;
     </script>
 </head>
 <body >
@@ -104,7 +103,10 @@
         <?php if(!isset($_POST[ 'select-beer2']) ): ?>
             <div id="show">
                 <div id="searchbarr">
-                    <searching v-if="showSearch" :translations="translations"></searching>
+                    <div id="search">
+                        <input id="searchbar" type="text" name="searchbar" v-model="userPreference" :placeholder="translations.search_placeholder">
+                        <button id="search-bt" @click="search"><img id="mag-glass" src="/assets/img/magnifying_glass.png" alt="magnifying_glass"></button>
+                    </div>
                 </div>
                 <div class="cards-container">
                     <beers
@@ -150,6 +152,7 @@
     <footer> 
     <script src="/assets/scripts/global.js"></script>
     <script type="module" defer src="/assets/scripts/script.js"></script>
+    <script src="/openai.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body> 
 
