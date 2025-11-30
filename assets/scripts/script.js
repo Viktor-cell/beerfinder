@@ -38,7 +38,7 @@ createApp({
             if (input) input.value = beerName;
         }
 
-        const beers = ref(window.beers);
+        const beers = ref(JSON.parse("/assets/json/sk.json"));
 
 
         return {
