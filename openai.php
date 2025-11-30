@@ -72,7 +72,7 @@ Your task is to select pubs that serve a beer matching the provided beer JSON. M
     "address": ""
     "city": "",
     "price_per_500ml": "price of said beer in different locations"
-    "alternatives": ["array of strings of other beers"]
+    "link": "link to google maps that points to that address, if not given return unknown"
 }
 
 Rules:

@@ -3,6 +3,8 @@ const langMenu = document.getElementById("langMenu");
 const overlay = document.getElementById("overlay")
 const langMenuBtn = document.getElementById("langMenuBtn")
 
+
+
 function openLangMenu() {
     overlay.style.display = 'block';
     langMenu.style.display = 'flex';

@@ -192,9 +192,14 @@
         "city": "Enter city: "
     },
     "search_placeholder": "Characterize your beer",
+    "pub": {
+        "price": "Price",
+        "map": "View on map"
+    },
     "footer": {
         "footer-about": "A group of programmers and beer enthusiasts",
         "footer-links": {
+            "links": "Quick links",
             "home": "Home",
             "about": "About us",
             "finder": "Find my beer",

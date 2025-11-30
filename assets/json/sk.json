@@ -192,12 +192,18 @@
         "city": "Zadajte mesto: "
     },
     "search_placeholder": "Napis vlastnosti svojho piva",
+    "pub": {
+        "price": "Cena",
+        "map": "Pozrieť na mape"
+    },
     "footer": {
         "footer-about": "Skupina programatorov a milovnikov piva",
         "footer-links": {
+            "links": "Rýchle odkazy",
             "home": "Domov",
             "about": "O nás",
-            "finder": "Nájsť pivo"
+            "finder": "Nájsť pivo",
+            "contact": "Kontakty"
         },
         "footer-social": "Sleduj nás",
         "footer-bottom": "Všetky práva vyhradené."

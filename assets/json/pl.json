@@ -192,9 +192,14 @@
         "city": "Wprowadź miasto: "
     },
     "search_placeholder": "Napisz cechy swojego piwa",
+    "pub": {
+        "price": "Cena",
+        "map": "Zobacz na mapie"
+    },
     "footer": {
         "footer-about": "Grupa programistów i miłośników piwa",
         "footer-links": {
+            "links": "Szybkie linki",
             "home": "Strona główna",
             "about": "O nas",
             "finder": "Znajdź piwo",

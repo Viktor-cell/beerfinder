@@ -4,6 +4,12 @@
     }
 }
 
+@media(max-width: 800px) {
+    .pub {
+        width: 80%;
+    }
+}
+
 @media(max-width: 630px) {
     header {
         padding: 0 20px;
@@ -13,5 +19,8 @@
     }
     #nav {
         font-size: 12.5px;
+    }
+    #inputs {
+        flex-direction: column;
     }
 }

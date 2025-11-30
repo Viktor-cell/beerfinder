@@ -192,9 +192,14 @@
         "city": "Zadejte město: "
     },
     "search_placeholder": "Napis vlastnosti svého piva",
+    "pub": {
+        "price": "Cena",
+        "map": "Zobrazit na mapě"
+    },
     "footer": {
         "footer-about": "Skupina programátorů a milovníků piva",
         "footer-links": {
+            "links": "Rychlé odkazy",
             "home": "Domů",
             "about": "O nás",
             "finder": "Najít pivo",

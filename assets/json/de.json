@@ -192,9 +192,14 @@
         "city": "Stadt eingeben: "
     },
     "search_placeholder": "Beschreiben Sie die Eigenschaften Ihres Bieres.",
+    "pub": {
+        "price": "Preis",
+        "map": "Auf Karte anzeigen"
+    },
     "footer": {
         "footer-about": "Eine Gruppe von Programmierern und Bierliebhabern",
         "footer-links": {
+            "links": "Schnelle Links",
             "home": "Startseite",
             "about": "Über uns",
             "finder": "Bier finden",
