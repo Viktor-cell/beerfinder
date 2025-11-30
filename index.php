@@ -110,7 +110,7 @@
                 </div>
                 <div class="cards-container">
                     <beers
-                        v-for="beer in beers"
+                        v-for="beer in info"
                         :beer="beer"
                         :key="beer.id"
                         @select-beer="fillBeerInput"
@@ -152,7 +152,7 @@
     <footer> 
     <script src="/assets/scripts/global.js"></script>
     <script type="module" defer src="/assets/scripts/script.js"></script>
-    <script src="/openai.js"></script>
+    <script src="./openai.js"></script>
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
 </body> 
 

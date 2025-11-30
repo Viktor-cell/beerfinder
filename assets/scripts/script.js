@@ -38,16 +38,12 @@ createApp({
             if (input) input.value = beerName;
         }
 
-        const beers = ref(JSON.parse("/assets/json/sk.json"));
-
-
         return {
             showSearch,
             toggleSearchBar,
             info,
             translations,
-            fillBeerInput,
-            beers
+            fillBeerInput
         }
     }
 }).mount("#app")
